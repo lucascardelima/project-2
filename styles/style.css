@@ -1,0 +1,14 @@
+nav {
+    display: flex;
+}
+
+#reservia-logo {
+    max-width: 100px;  
+    
+}
+
+a {
+    justify-self: flex-end;
+    text-decoration: none;
+}
+
