@@ -1,14 +1,94 @@
+* {
+    font-family: 'Raleway';
+}
+
 nav {
+    margin-left: 30px;
+    
     display: flex;
 }
 
+header {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
 #reservia-logo {
+    padding-top: 25px;
     max-width: 100px;  
-    
+}
+
+.accommodations {
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.activities {
+    margin: 0px 25px;
+}
+
+#sign-up {
+    margin: 0px 25px;
+    color: #0065FC;
 }
 
 a {
-    justify-self: flex-end;
+    color: black;
     text-decoration: none;
+    padding-top: 35px;
 }
 
+#buttons:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+#sign-up:hover {
+    border-top: 2px solid #0065FC;
+}
+
+
+h2 {
+    margin-bottom: -10px;
+}
+
+.search-box {
+    margin-top: 30px;
+    display: flex;
+    width: 1000px;
+    height: 60px;
+}
+
+.location-icon {
+    width: 15px;
+    padding: 20px 20px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+input {
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
+    
+    width: 250px;
+}
+
+::placeholder {
+    color: black;
+    font-size: 19px;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.search-button {
+    width: 25px;
+}
+
+footer {
+    width: auto;
+    background-color: #F2F2F2;
+}
