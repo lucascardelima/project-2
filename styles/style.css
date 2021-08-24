@@ -1,5 +1,11 @@
-body {
+html {
     margin-left: 40px;
+    margin-right: 40px;
+}
+
+body {
+    max-width: 1300px;
+    margin: auto;
     font-family: 'Raleway';
 }
 
@@ -156,3 +162,4 @@ footer {
     width: auto;
     background-color: #F2F2F2;
 }
+
