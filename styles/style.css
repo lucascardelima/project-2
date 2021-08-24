@@ -1,16 +1,15 @@
-* {
+body {
+    margin-left: 40px;
     font-family: 'Raleway';
 }
 
 nav {
-    margin-left: 30px;
-    
     display: flex;
 }
 
 header {
     margin-top: 40px;
-    margin-left: 30px;
+    
 }
 
 #reservia-logo {
@@ -27,9 +26,10 @@ header {
     margin: 0px 25px;
 }
 
-#sign-up {
+.sign-up {
     margin: 0px 50px 0px 25px;
     color: #0065FC;
+    font-weight: bold;
 }
 
 a {
@@ -43,16 +43,11 @@ a {
     color: #0065FC;
 }
 
-#sign-up:hover {
-    border-top: 2px solid #0065FC;
-}
-
-
 h2 {
     margin-bottom: -10px;
 }
 
-.header-p {
+p {
     font-size: 17px;
 }
 
@@ -79,12 +74,16 @@ input {
     border-left: none;
     border-right: none;
     width: 240px;
+    color: black;
+    font-size: 19px;
+    font-weight: lighter;
+    padding-left: 20px;
+    
 }
 
 ::placeholder {
     color: black;
-    font-size: 19px;
-    padding-left: 10px;
+    font-size: 20px;
     padding-top: 5px;
     font-weight: bold;
 }
@@ -100,6 +99,58 @@ button {
     font-weight: bold;
     cursor: pointer;
 }
+
+.filters-container {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    max-width: 1000px;
+    box-sizing: border-box;
+    
+}
+
+.filters-buttons {
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+    padding: 15px 20px 15px 40px;
+    border: 2px solid #7e7e7e4b;
+    border-left: none;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    
+}
+
+.filters-title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0px;
+    margin-right: 0px;
+}
+
+#filters-icons {
+    position: absolute;
+    left: -25px;
+    top: -3px;
+    bottom: -3px;
+    padding: 19px 15px;
+    background-color: #DEEBFF;
+    border-radius: 35px;
+    color: #0065FC;
+}
+
+.obs-container {
+    display: flex;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#obs-icon {
+    color: #0065FC;
+    padding: 20px 20px 20px 0px;
+}
+
 
 footer {
     width: auto;
