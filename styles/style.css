@@ -59,7 +59,7 @@ p {
 
 .search-box {
     box-sizing: border-box;
-    margin-top: 30px;
+    margin-top: 10px;
     display: inline-flex;
     width: 250pxpx;
     height: 57px;
@@ -94,7 +94,7 @@ input {
     font-weight: bold;
 }
 
-button {
+#city-search-button {
     padding: 17px 20px;
     background-color: #0065FC;
     color: white;
@@ -102,24 +102,25 @@ button {
     border-top-right-radius: 17px;
     border-bottom-right-radius: 17px;
     font-size: 20px;
-    font-weight: bold;
     cursor: pointer;
 }
 
 .filters-container {
     display: flex;
-    margin-top: 50px;
+    margin-top: 40px;
     justify-content: space-between;
-    max-width: 1000px;
-    box-sizing: border-box;
-    
+    max-width: 900px;
+    box-sizing: border-box;   
+}
+
+#filters-head-text {
+    font-size:  17px;
+    font-weight: bolder;
+    margin-right: 20px;
 }
 
 .filters-buttons {
-    font-size: 18px;
-    font-weight: bolder;
-    position: relative;
-    padding: 15px 20px 15px 40px;
+    display: flex;
     border: 2px solid #7e7e7e4b;
     border-left: none;
     border-top-right-radius: 35px;
@@ -127,23 +128,29 @@ button {
     
 }
 
-.filters-title {
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    padding: 15px 0px;
-    margin-right: 0px;
+.filters-text:hover {
+    color: #0065FC;
+}
+
+.filters-icon-container {
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-left: -25px;
+    padding: 17px 15px;
+    background-color: #DEEBFF;
+    border-radius: 35px;
+    
 }
 
 #filters-icons {
-    position: absolute;
-    left: -25px;
-    top: -3px;
-    bottom: -3px;
-    padding: 19px 15px;
-    background-color: #DEEBFF;
-    border-radius: 35px;
     color: #0065FC;
+}
+
+.filters-text {
+    font-size: 17px;
+    font-weight: bolder;
+    padding: 13.5px 25px 10px 15px; 
+    
 }
 
 .obs-container {
@@ -154,7 +161,7 @@ button {
 
 #obs-icon {
     color: #0065FC;
-    padding: 20px 20px 20px 0px;
+    padding: 18px 20px 20px 0px;
 }
 
 
