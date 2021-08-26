@@ -23,7 +23,7 @@ header {
     max-width: 100px;  
 }
 
-.accommodations {
+.accommodations-link {
     margin-left: auto;
     margin-right: 25px;
 }
@@ -62,13 +62,13 @@ p {
     margin-top: 10px;
     display: inline-flex;
     width: 250pxpx;
-    height: 57px;
+    height: 47px;
 }
 
 .location-icon {
-    font-size: 10px;
+    font-size: 8px;
     width: 17px;
-    padding: 20px 20px;
+    padding: 15px 16px 14px 19px;
     background-color: #F2F2F2;
     border-top-left-radius: 17px;
     border-bottom-left-radius: 17px;
@@ -83,25 +83,26 @@ input {
     color: black;
     font-size: 19px;
     font-weight: lighter;
-    padding-left: 20px;
+    padding-left: 10px;
     
 }
 
 ::placeholder {
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 5px;
-    font-weight: bold;
+    font-weight: 544;
+    padding-left: -10px;
 }
 
 #city-search-button {
-    padding: 17px 20px;
+    padding: 13px 20px;
     background-color: #0065FC;
     color: white;
     border: none;
     border-top-right-radius: 17px;
     border-bottom-right-radius: 17px;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
 }
 
@@ -165,8 +166,41 @@ input {
 }
 
 
-footer {
-    width: auto;
+.accommodations-in-location-container {
     background-color: #F2F2F2;
+    border-radius: 17px;
+    max-width: 850px;
 }
 
+.accommodations-in-title {
+    padding: 35px 30px;
+}
+
+.accommodations-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+}
+
+.accommodations {
+    border-radius: 17px;
+    background-color: white;
+    max-width: 200px;
+}
+
+#accommodations-image {
+    width: 190px;
+    height: 90px;
+    padding: 5px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+
+}
+
+#show-more {
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 20px 30px;
+}
