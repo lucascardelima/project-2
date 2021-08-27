@@ -113,6 +113,25 @@ input {
     max-width: 900px;
     box-sizing: border-box;   
 }
+.money-icon::before {
+    color: #0065FC;
+    padding: 0px 2px 0px 2px;
+}
+
+.child-icon::before {
+    color: #0065FC;
+    padding: 2px 4px 0px 4px;
+}
+
+.child-icon {
+    padding: 2px 0px 0px 0px;
+}
+
+.heart-icon {
+    color: #0065FC;
+    padding: 1px 1.33px 0px 1.33px;
+    margin: 2px 0px 0px 0px;
+}
 
 #filters-head-text {
     font-size:  17px;
@@ -165,42 +184,81 @@ input {
     padding: 18px 20px 20px 0px;
 }
 
+.accommodations-section {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .accommodations-in-location-container {
     background-color: #F2F2F2;
     border-radius: 17px;
     max-width: 850px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
 
 .accommodations-in-title {
-    padding: 35px 30px;
+    padding: 35px 0px 35px 35px;
 }
 
 .accommodations-container {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 20px;
+    row-gap: 30px;
+    column-gap: 0px; */
 }
 
 .accommodations {
     border-radius: 17px;
     background-color: white;
-    max-width: 200px;
+    max-width: 250px;
+    margin: 15px 0px;
 }
 
-#accommodations-image {
-    width: 190px;
-    height: 90px;
-    padding: 5px;
+.accommodations-image {
+    width: 230px;
+    height: 120px;
+    padding: 6px 6px 0px 6px;
     border-top-left-radius: 17px;
     border-top-right-radius: 17px;
 
 }
 
+.accommodations-details-container {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.checked {
+    color: #0065FC;
+    
+}
+
+.accommodations-details-container div:nth-child(1) {
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+.accommodations-details-container div:nth-child(2) {
+    margin: 5px 0px;
+}
+
 #show-more {
     font-size: 15px;
     font-weight: bolder;
-    padding: 20px 30px;
+    padding: 20px 0px 40px 30px;
+}
+
+.most-popular {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin-top: 20;
 }
