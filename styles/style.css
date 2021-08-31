@@ -337,12 +337,51 @@ span {
 }
 
 .activities-in-title {
-
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;
 }
 
-.activity-img {
-    object-fit: cover;
+.activity-img-one {
+    object-fit: none;
+    width: 300px;
+    height: 400px;
+}
+
+.activity-img-two {
+    object-fit: none;
+    width: 300px;
+    height: 200px;
     
+}
+
+.activity-img-three {
+    object-fit: none;
+    width: 300px;
+    height: 110px;
+    
+}
+
+.activity-img-four {
+    object-fit: none;
+    width: 300px;
+    height: 400px;
+    object-position: center;
+}
+
+.activity-img-five {
+    object-fit: none;
+    width: 300px;
+    height: 110px;
+    
+    object-position: 60% 20%;
+}
+
+.activity-img-six {
+    object-fit: none;
+    width: 300px;
+    height: 200px;
+    object-position: center;
 }
 
 .activities-subtitle {
