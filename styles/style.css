@@ -1,19 +1,23 @@
 html {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-    max-width: 1300px;
-    margin: auto;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Raleway';
 }
 
 nav {
+    max-width: 1300px;
+    margin: auto;
     display: flex;
 }
 
 header {
+    max-width: 1300px;
+    margin: auto;
     margin-top: 40px;
     
 }
@@ -33,7 +37,7 @@ header {
 }
 
 .sign-up {
-    margin: 0px 50px 0px 25px;
+    margin: 0px 20px 0px 25px;
     color: #0065FC;
     font-weight: bold;
 }
@@ -186,6 +190,8 @@ input {
 }
 
 .accommodations-section {
+    max-width: 1300px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -219,7 +225,7 @@ input {
     background-color: white;
     max-width: 250px;
     margin: 15px 0px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.103), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.068), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
 }
 
 .accommodations-image {
@@ -268,6 +274,7 @@ span {
     flex-direction: column;
     align-content: space-around;
     min-width: 370px;
+    width: 400px;
     background-color: #F2F2F2;
     border-radius: 17px;
     max-width: 850px;
@@ -294,10 +301,10 @@ span {
     border-radius: 17px;
     margin: auto;
     background-color: white;
-    width: 300px;
+    width: 320px;
     height: 130px;
     margin: 15px 0px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.068), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
     
 }
 
@@ -316,24 +323,27 @@ span {
     flex-direction: column;
     justify-content: space-around;
     width: 300px;
+    margin-top: 5px;
+    margin-left: 8px;
     font-size: 14px;
 }
 
 /* Activities scetion styles */
 
 .activities-section {
-    max-height: 500px;
-    margin: 30px 0px;
+    max-width: 1300px;
+    margin: 30px auto;
 }
 
 
 .activities-container {
    display: grid;
    grid-auto-flow: column;
-   max-height: 450px;
+   max-height: 430px;
    grid-template-columns: 1fr 1fr 1fr 1fr;
    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-   grid-gap: 35px;
+   grid-gap: 32px;
+   max-width: 1300px;
 }
 
 .activities-in-title {
@@ -343,44 +353,45 @@ span {
 }
 
 .activity-img-one {
-    object-fit: none;
-    width: 300px;
-    height: 400px;
+    object-fit: cover;
+    width: 301px;
+    height: 380px;
 }
 
 .activity-img-two {
-    object-fit: none;
-    width: 300px;
-    height: 200px;
+    object-fit: cover;
+    width: 301px;
+    height: 195px;
     
 }
 
 .activity-img-three {
-    object-fit: none;
-    width: 300px;
-    height: 110px;
+    object-fit: cover;
+    width: 301px;
+    height: 100px;
+    object-position: 70% 30%;
     
 }
 
 .activity-img-four {
     object-fit: none;
-    width: 300px;
-    height: 400px;
+    width: 301px;
+    height: 380px;
     object-position: center;
 }
 
 .activity-img-five {
-    object-fit: none;
-    width: 300px;
-    height: 110px;
+    object-fit: cover;
+    width: 301px;
+    height: 100px;
     
     object-position: 60% 20%;
 }
 
 .activity-img-six {
-    object-fit: none;
-    width: 300px;
-    height: 200px;
+    object-fit: cover;
+    width: 301px;
+    height: 195px;
     object-position: center;
 }
 
@@ -393,9 +404,7 @@ span {
 
 .activity-one {
     grid-column: 1 / 2;
-    grid-row: 1 / 6;
-    
-    
+    grid-row: 1 / 6;   
 }
 
 .activity-two {
@@ -428,8 +437,31 @@ span {
     min-width: 300px;
     overflow: hidden;
     border-radius: 17px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(87, 46, 46, 0.068), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
     
+}
+
+/* footer container styles */
+
+
+footer {
+    margin-top: 60px;
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+.footer-container {
+    padding: 20px 0px;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    background-color: #F2F2F2;
+}
+
+.footer-links-container {
+    margin-right: 200px;
 }
 
 
