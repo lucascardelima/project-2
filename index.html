@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="eng">
+<html lang="en">
     <head>
         <title>Reservia</title>
         <link href="styles/style.css" type="text/css" rel="stylesheet">
@@ -8,11 +8,11 @@
     </head>
     
     <body>
-        <nav>
+        <nav class="nav-bar">
             <img id="reservia-logo" src="images/logo/Reservia@3x.png" alt="Logo">
-            <a href="" class="accommodations-link" id="buttons">Accommodations</a>
-            <a href=""class="activities" id="buttons">Activities</a>
-            <a href="" class="sign-up" id="buttons">Sign Up</a>
+            <a href="" class="bar-buttons" id="accommodations-link">Accommodations</a>
+            <a href="" class="bar-buttons" id="activities">Activities</a>
+            <a href="" class="bar-buttons" id="sign-up">Sign Up</a>
         </nav>
         
         <header>
@@ -21,7 +21,7 @@
         
             <form class="search-box">
                 <div class="location-icon"><i class="fas fa-map-marker-alt fa-2x"></i></div>
-                <input type="text" placeholder=" Marseille, France"></div>
+                <input type="text" placeholder=" Marseille, France">
                 <button id="city-search-button" type="submit">Search</button>
             </form>
 
@@ -42,7 +42,7 @@
                     <a href="" class="filters-text">Romantic</a>
                 </div>
                 <div class="filters-buttons">
-                    <div class="filters-icon-container"><i class="fas fa-dog fa-lg"id="filters-icons"></i></i></div>
+                    <div class="filters-icon-container"><i class="fas fa-dog fa-lg" id="filters-icons"></i></div>
                     <a href="" class="filters-text">Pets allowed</a>
                 </div>
             </div>
@@ -58,12 +58,10 @@
             <section>
                 <div class="accommodations-in-location-container">
                     <div class="accommodations-in-title">Accommodations in Marseille</div>
-
-                    <!-- insert the alt for images, explaining the content of the pictures -->
     
                     <div class="accommodations-container">
-                        <div class="accommodations">
-                            <img class="accommodations-image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <a href="" class="accommodations">
+                            <img class="accommodations-image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
                             <div class="accommodations-details-container">
                                 <div><b>Auberge la Cannebière</b></div>
                                 <div>Night starting at <b>25€</b></div>
@@ -73,10 +71,10 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
                             </div>
-                        </div>
+                        </a>
     
-                        <div class="accommodations">
-                            <img class="accommodations-image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                        <a href="" class="accommodations">
+                            <img class="accommodations-image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
                             <div class="accommodations-details-container">
                                 <div><b>Hôtel du port</b></div>
                                 <div>Night starting at <b>52€</b></div>
@@ -86,10 +84,10 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                             </div>
-                        </div>
+                        </a>
     
-                        <div class="accommodations">
-                            <img class="accommodations-image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                        <a href="" class="accommodations">
+                            <img class="accommodations-image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
                             <div class="accommodations-details-container">
                                 <div><b>Les mouettes Hotel</b></div>
                                 <div>Night starting at <b>76€</b></div>
@@ -99,10 +97,10 @@
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
                             </div>
-                        </div>
+                        </a>
     
-                        <div class="accommodations">
-                            <img class="accommodations-image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                        <a href="" class="accommodations">
+                            <img class="accommodations-image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
                             <div class="accommodations-details-container">
                                 <div><b>Hôtel de la mer</b></div>
                                 <div>Night starting at <b>46€</b></div>
@@ -112,10 +110,10 @@
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
                             </div>
-                        </div>
+                        </a>
     
-                        <div class="accommodations">
-                            <img class="accommodations-image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                        <a href="" class="accommodations">
+                            <img class="accommodations-image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
                             <div class="accommodations-details-container">
                                 <div><b>Auberge Le Panier</b></div>
                                 <div>Night starting at <b>23€</b></div>
@@ -125,10 +123,10 @@
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
                             </div>
-                        </div>
+                        </a>
     
-                        <div class="accommodations">
-                            <img class="accommodations-image" src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                        <a href="" class="accommodations">
+                            <img class="accommodations-image" src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
                             <div class="accommodations-details-container">
                                 <div><b>Hôtel chez Amina</b></div>
                                 <div>Night starting at <b>25€</b></div>
@@ -138,7 +136,7 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                             </div>
-                        </div>
+                        </a>
     
                     </div>
     
@@ -152,8 +150,8 @@
                     <div class="most-popular-icon"><i class="fas fa-chart-line"></i></div>
                 </div>
 
-                <div class="most-popular-accommodations">
-                    <img class="most-popular-accommodations-image" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                <a href="" class="most-popular-accommodations">
+                    <img class="most-popular-accommodations-image" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                     <div class="most-popular-accommodations-details-container">
                         <div><b>Morning Sun Hotel</b></div>
                         <div>Night starting at <b>128€</b></div>
@@ -166,10 +164,10 @@
                         </div>
                         
                     </div>
-                </div>
+                </a>
 
-                <div class="most-popular-accommodations">
-                    <img class="most-popular-accommodations-image" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
+                <a href="" class="most-popular-accommodations">
+                    <img class="most-popular-accommodations-image" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
                     <div class="most-popular-accommodations-details-container">
                         <div><b>Au coeur de l'eau Bed and Breakfast</b></div>
                         <div>Night starting at <b>71€</b></div>
@@ -181,10 +179,10 @@
                             <span class="fa fa-star"></span>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="most-popular-accommodations">
-                    <img class="most-popular-accommodations-image" src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+                <a href="" class="most-popular-accommodations">
+                    <img class="most-popular-accommodations-image" src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                     <div class="most-popular-accommodations-details-container">
                         <div><b>Tout bleu at Blanc Hotel</b></div>
                         <div>Night starting at <b>68€</b></div>
@@ -196,7 +194,7 @@
                             <span class="fa fa-star"></span>
                         </div>
                     </div>
-                </div>
+                </a>
             </section>
         </section>
         
@@ -205,40 +203,40 @@
                 <div class="activities-in-title">Activities in Marseille</div>
                 <div class="activities-container">
 
-                    <div class="activity-one" id="activity">
-                        <img class="activity-img-one" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                    <a href="" class="activity" id="activity-one">
+                        <img class="activity-img-one" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                         <div class="activities-subtitle" >Old Port</div>
-                    </div>
+                    </a>
 
-                    <div class="activity-two" id="activity">
-                        <img class="activity-img-two" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                    <a href="" class="activity" id="activity-two">
+                        <img class="activity-img-two" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
                         <div class="activities-subtitle">Pomègues Fort</div>
-                    </div>
+                    </a>
 
-                    <div class="activity-three" id="activity">
-                        <div><img class="activity-img-three" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"></div>
+                    <a href="" class="activity" id="activity-three">
+                        <div><img class="activity-img-three" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt=""></div>
                         <div class="activities-subtitle" >Frioul Island</div>
-                    </div>
+                    </a>
 
-                    <div class="activity-four" id="activity">
-                        <div><img class="activity-img-four" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"></div>
+                    <a href="" class="activity" id="activity-four">
+                        <div><img class="activity-img-four" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt=""></div>
                         <div class="activities-subtitle">Calanques National Park</div>
-                    </div>
+                    </a>
 
-                    <div class="activity-five" id="activity">
-                        <img class="activity-img-five" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                    <a href="" class="activity" id="activity-five">
+                        <img class="activity-img-five" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                         <div class="activities-subtitle" >Notre-Dame-de-la-Garde</div>
-                    </div>
+                    </a>
 
-                    <div class="activity-six" id="activity">
-                        <img class="activity-img-six" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                    <a href="" class="activity" id="activity-six">
+                        <img class="activity-img-six" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
                         <div class="activities-subtitle" >Longchamp Park</div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
         
-        <footer class="footer">
+        <footer>
             <div class="footer-container">
                 <div class="footer-links-container">
                     <h3>About</h3>
