@@ -10,19 +10,13 @@ body {
     font-family: 'Raleway';
 }
 
+/* Navigation bar with logo and links */
+
 nav {
     max-width: 1300px;
     padding: 0px 30px;
     margin: auto;
     display: flex;
-}
-
-header {
-    max-width: 1300px;
-    padding: 0px 30px;
-    margin: auto;
-    margin-top: 40px;
-    
 }
 
 #reservia-logo {
@@ -58,6 +52,15 @@ header {
     color: #0065FC;
 }
 
+/* Header and paragraph */
+
+header {
+    max-width: 1300px;
+    padding: 0px 30px;
+    margin: auto;
+    margin-top: 40px;   
+}
+
 h2 {
     margin-bottom: -10px;
 }
@@ -66,11 +69,12 @@ p {
     font-size: 17px;
 }
 
+/* Search field */
+
 .search-box {
-    box-sizing: border-box;
     margin-top: 10px;
     display: inline-flex;
-    width: 250pxpx;
+    max-width: 700px;
     height: 47px;
 }
 
@@ -88,7 +92,7 @@ input {
     border-bottom: 1px solid #F2F2F2;
     border-left: none;
     border-right: none;
-    width: 240px;
+    max-width: 500px;
     color: black;
     font-size: 19px;
     font-weight: lighter;
@@ -98,13 +102,13 @@ input {
 
 ::placeholder {
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     padding-top: 5px;
-    font-weight: 544;
+    font-weight: bold;
     padding-left: -10px;
 }
 
-#city-search-button {
+.city-search-button {
     padding: 13px 20px;
     background-color: #0065FC;
     color: white;
@@ -115,14 +119,34 @@ input {
     cursor: pointer;
 }
 
-.filters-container {
+/* Filters buttons */
+
+.filters-border {
+    padding: 10px 10px 10px 30px;
+}
+
+.filters-main-container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
     justify-content: space-between;
     max-width: 900px;
-    box-sizing: border-box;   
 }
+
+.filters-head-text {
+    font-size: 17px;
+    font-weight: bolder;
+    margin-right: 20px;
+    padding-top: 8px;
+}
+
+.filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+
 .money-icon::before {
     color: #0065FC;
     padding: 0px 2px 0px 2px;
@@ -141,12 +165,6 @@ input {
     color: #0065FC;
     padding: 1px 1.33px 0px 1.33px;
     margin: 2px 0px 0px 0px;
-}
-
-#filters-head-text {
-    font-size:  17px;
-    font-weight: bolder;
-    margin-right: 20px;
 }
 
 .filters-buttons {
@@ -182,8 +200,9 @@ input {
     font-size: 17px;
     font-weight: bolder;
     padding: 13.5px 25px 10px 15px; 
-    
 }
+
+/* Observation field */
 
 .obs-container {
     display: flex;
@@ -207,30 +226,30 @@ input {
     flex-wrap: wrap;
 }
 
+/* Normal Accommodations sections and cards */
 
-.accommodations-in-location-container {
+.accommodations-main-container {
     background-color: #F2F2F2;
     border-radius: 17px;
     max-width: 850px;
     margin-top: 20px;
     margin-bottom: 20px;
-    
 }
 
-.accommodations-in-title {
+.cards-container-title {
     font-size: 22px;
     font-weight: bold;
     padding: 40px 0px 10px 35px;
 }
 
-.accommodations-container {
+.cards-container {
     display: flex;
     justify-content: space-between;
     padding: 0px 35px;
     flex-wrap: wrap;
 }
 
-.accommodations {
+.accommodations-cards {
     border-radius: 17px;
     background-color: white;
     max-width: 250px;
@@ -238,12 +257,12 @@ input {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.068), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
 }
 
-a.accommodations, a.most-popular-accommodations, a.activity {
+a.accommodations-cards, a.most-popular-accommodations-cards, a.activity-cards {
     text-decoration: none;
     color: black;
 }
 
-.accommodations-image {
+.accommodations-cards-image {
     width: 230px;
     height: 110px;
     padding: 5px 5px 0px 5px;
@@ -278,11 +297,13 @@ span {
     margin: 5px 0px;
 }
 
-#show-more {
+.show-more {
     font-size: 16px;
     font-weight: bolder;
     padding: 20px 0px 40px 30px;
 }
+
+/* Most popular accommodations sections and cards */
 
 .most-popular-accommodations-container {
     display: flex;
@@ -297,7 +318,7 @@ span {
     margin-bottom: 20px;
 }
 
-.accommodations-in-title-container {
+.accommodations-heading-container {
     display: flex;
     justify-content: space-between;
     margin-right: 35px;
@@ -310,7 +331,7 @@ span {
 }
 
 
-.most-popular-accommodations {
+.most-popular-accommodations-cards {
     display: flex;
     align-self: center;
     border-radius: 17px;
@@ -362,7 +383,7 @@ span {
    max-width: 1300px;
 }
 
-.activities-in-title {
+.activities-cards-container-title {
     font-size: 22px;
     font-weight: bold;
     padding: 20px 0px 20px 0px;
@@ -413,6 +434,7 @@ span {
 }
 
 .activities-subtitle {
+    max-width: auto;
     font-size: 100%;
     font-weight: bold;
     text-align: start;
@@ -449,7 +471,7 @@ span {
     grid-row: 4 / 8;
 }
 
-.activity {
+.activity-cards {
     width: auto;
     max-width: 300px;
     overflow: hidden;
