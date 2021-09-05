@@ -7,7 +7,7 @@ html {
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Navigation bar with logo and links */
@@ -61,7 +61,8 @@ header {
     margin-top: 40px;   
 }
 
-h2 {
+header>h2 {
+    font-weight: bold;
     margin-bottom: -10px;
 }
 
@@ -95,7 +96,7 @@ input {
     max-width: 500px;
     color: black;
     font-size: 19px;
-    font-weight: lighter;
+    font-weight: 500;
     padding-left: 10px;
     
 }
@@ -104,7 +105,7 @@ input {
     color: black;
     font-size: 20px;
     padding-top: 5px;
-    font-weight: bold;
+    font-weight: 600;
     padding-left: -10px;
 }
 
@@ -135,14 +136,14 @@ input {
     flex-wrap: wrap;
     margin-top: 40px;
     justify-content: space-between;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .filters-head-text {
-    font-size: 17px;
-    font-weight: bolder;
+    font-size: 20px;
+    font-weight: bold;
     margin-right: 20px;
-    padding-top: 8px;
+    padding-top: 3px;
 }
 
 .filters-container {
@@ -202,8 +203,8 @@ input {
 .filters-text {
     text-decoration: none;
     color: black;
-    font-size: 17px;
-    font-weight: bolder;
+    font-size: 20px;
+    font-weight: bold;
     padding: 13.5px 25px 10px 15px; 
 }
 
@@ -510,6 +511,31 @@ footer {
 
 
 @media all and (max-device-width: 480px) {
+    .nav-bar {
+        flex-wrap: wrap;
+    }
+
+    .reservia-logo {
+        order: 1;
+    }
+
+    #accommodations-link {
+        order: 3;
+        width: auto;
+        flex-grow: 1;
+    }
+
+    #activities {
+        order: 4;
+        width: auto;
+        flex-grow: 1;
+    }
+
+    #sign-up {
+        order: 2;
+        margin-left: auto;
+    }
+
 
 
     .city-search-button {
