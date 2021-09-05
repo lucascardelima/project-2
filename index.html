@@ -33,7 +33,7 @@
             <div class="filters-main-container">
                 <p class="filters-head-text">Filters</p>
 
-                <div class="filters-container">
+                <div class="filters-container" id="low-cost">
                     <div class="filters-border">
                         <div class="filters-buttons">
                             <div class="filters-icon-container"><i class="fas fa-money-bill-wave money-icon"></i></div>
@@ -41,23 +41,23 @@
                         </div>
                     </div>
                     
-                    <div class="filters-border">
+                    <div class="filters-border" id="family-friendly">
                         <div class="filters-buttons">
                             <div class="filters-icon-container"><i class="fas fa-child child-icon fa-lg"></i></div>
                             <a href="" class="filters-text">Family-friendly</a>
                         </div>
                     </div>
     
-                    <div class="filters-border">
+                    <div class="filters-border" id="romantic">
                         <div class="filters-buttons">
                             <div class="filters-icon-container"><i class="fas fa-heart heart-icon fa-lg"></i></div>
                             <a href="" class="filters-text">Romantic</a>
                         </div>
                     </div>
     
-                    <div class="filters-border">
+                    <div class="filters-border" id="pets-allowed">
                         <div class="filters-buttons">
-                            <div class="filters-icon-container"><i class="fas fa-dog fa-lg" id="filters-icons"></i></div>
+                            <div class="filters-icon-container"><i class="fas fa-dog dog-icon fa-lg" id="filters-icons"></i></div>
                             <a href="" class="filters-text">Pets allowed</a>
                         </div>
                     </div>
@@ -73,94 +73,96 @@
         
         
         <section class="accommodations-section">
-            <section>
-                
-                <div class="accommodations-main-container">
-                    <div class="cards-container-title">Accommodations in Marseille</div>
-                    <div class="cards-container">
-                        <a href="" class="accommodations-cards">
-                            <img class="accommodations-cards-image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                            <div class="accommodations-details-container">
-                                <div><b>Auberge la Cannebière</b></div>
-                                <div>Night starting at <b>25€</b></div>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                        </a>
-    
-                        <a href="" class="accommodations-cards">
-                            <img class="accommodations-cards-image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
-                            <div class="accommodations-details-container">
-                                <div><b>Hôtel du port</b></div>
-                                <div>Night starting at <b>52€</b></div>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </div>
-                        </a>
-    
-                        <a href="" class="accommodations-cards">
-                            <img class="accommodations-cards-image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
-                            <div class="accommodations-details-container">
-                                <div><b>Les mouettes Hotel</b></div>
-                                <div>Night starting at <b>76€</b></div>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                        </a>
-    
-                        <a href="" class="accommodations-cards">
-                            <img class="accommodations-cards-image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
-                            <div class="accommodations-details-container">
-                                <div><b>Hôtel de la mer</b></div>
-                                <div>Night starting at <b>46€</b></div>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                        </a>
-    
-                        <a href="" class="accommodations-cards">
-                            <img class="accommodations-cards-image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
-                            <div class="accommodations-details-container">
-                                <div><b>Auberge Le Panier</b></div>
-                                <div>Night starting at <b>23€</b></div>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                        </a>
-    
-                        <a href="" class="accommodations-cards">
-                            <img class="accommodations-cards-image" src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
-                            <div class="accommodations-details-container">
-                                <div><b>Hôtel chez Amina</b></div>
-                                <div>Night starting at <b>25€</b></div>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </div>
-                        </a>
-    
-                    </div>
-    
-                    <p class="show-more">Show more</p>
+            
+                  
+            <section class="accommodations-main-container">
+                <div class="cards-container-title">Accommodations in Marseille</div>
+
+                <div class="cards-container">
+                    <a href="" class="accommodations-cards">
+                        <img class="accommodations-cards-image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                        <div class="accommodations-details-container">
+                            <div><b>Auberge la Cannebière</b></div>
+                            <div>Night starting at <b>25€</b></div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </a>
+
+                    <a href="" class="accommodations-cards">
+                        <img class="accommodations-cards-image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                        <div class="accommodations-details-container">
+                            <div><b>Hôtel du port</b></div>
+                            <div>Night starting at <b>52€</b></div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </a>
+
+                    <a href="" class="accommodations-cards">
+                        <img class="accommodations-cards-image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                        <div class="accommodations-details-container">
+                            <div><b>Les mouettes Hotel</b></div>
+                            <div>Night starting at <b>76€</b></div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </a>
+
+                    <a href="" class="accommodations-cards">
+                        <img class="accommodations-cards-image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                        <div class="accommodations-details-container">
+                            <div><b>Hôtel de la mer</b></div>
+                            <div>Night starting at <b>46€</b></div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </a>
+
+                    <a href="" class="accommodations-cards">
+                        <img class="accommodations-cards-image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                        <div class="accommodations-details-container">
+                            <div><b>Auberge Le Panier</b></div>
+                            <div>Night starting at <b>23€</b></div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </a>
+
+                    <a href="" class="accommodations-cards">
+                        <img class="accommodations-cards-image" src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                        <div class="accommodations-details-container">
+                            <div><b>Hôtel chez Amina</b></div>
+                            <div>Night starting at <b>25€</b></div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </a>
+                                    
                 </div>
+
+                <p class="show-more">Show more</p>
+
             </section>
+            
 
             <section class="most-popular-accommodations-container">
                 <div class="accommodations-heading-container">
