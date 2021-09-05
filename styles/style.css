@@ -513,30 +513,55 @@ footer {
 @media all and (max-device-width: 480px) {
     .nav-bar {
         flex-wrap: wrap;
+        max-width: 1300px;
+        padding: 0px 0px;
+        margin: auto;
+       
     }
 
     .reservia-logo {
         order: 1;
+        padding-top: 25px;
+        padding-left: 25px;
     }
 
     #accommodations-link {
         order: 3;
-        width: auto;
         flex-grow: 1;
+        padding-top: 25px;
+        padding-bottom: 13px;
+        margin-right: 0px;
+        border-bottom: 3px solid #F2F2F2;
+        text-align: center;
     }
 
     #activities {
         order: 4;
-        width: auto;
         flex-grow: 1;
+        padding-top: 25px;
+        padding-bottom: 13px;
+        margin-right: 0px;
+        margin-left: 0px;
+        border-bottom: 3px solid #F2F2F2;
+        text-align: center;
+    }
+
+    #accommodations-link, #activities:active {
+        border-bottom-color: #0065FC;
+    }
+
+    #accommodations-link, #activities, #sign-up:hover {
+        border-top: none;
+        color: none;
     }
 
     #sign-up {
         order: 2;
         margin-left: auto;
+        margin-right: 0px;
+        padding-right: 25px;
+        padding-top: 40px;
     }
-
-
 
     .city-search-button {
         display: none;
