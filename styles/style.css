@@ -515,7 +515,7 @@ footer {
         flex-wrap: wrap;
         max-width: 380px; 
         padding: 0px 0px;
-        margin: auto;
+        margin: 0px;
        
     }
 
@@ -673,6 +673,7 @@ footer {
     /* Accommodations Section */
 
     .accommodations-section {
+        max-width: 100%;
         flex-direction: column;
         padding: 0px 0px;
     }
@@ -684,6 +685,15 @@ footer {
         order: 1;
         border-radius: 0px;
         margin-bottom: 10px;
+    }
+
+    #most-popular-cards-container-title {
+        padding-top: 40px;
+        max-width: 100%;
+    }
+    
+    .accommodations-heading-container {
+
     }
 
 
@@ -699,11 +709,22 @@ footer {
     .cards-container-title {
         max-width: 100%;
         padding-top: 10px;
+        padding-left: 25px;
     }
 
     .cards-container {
         max-width: 100%;
         flex-direction: column;
+        padding: 0px 25px;
+    }
+
+    .accommodations-cards{
+        max-width: 100%;
+    }
+
+    .accommodations-cards-image {
+        max-width: 100%;
+        width: 97%;
     }
 
     /* Footer */
