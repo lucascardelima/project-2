@@ -555,7 +555,7 @@ footer {
         grid-row: 2 / 3;
     }
 
-    #activities: {
+    #activities {
         border-bottom-color: #0065FC;
         color: #0065FC;
     }
@@ -706,13 +706,17 @@ footer {
         padding-right: 0px;
     }
 
+    #most-popular-last-card {
+        margin-bottom: 30px;
+    }
+
     #most-popular-cards-container-title {
         padding-top: 40px;
         max-width: 100%;
     }
     
-    .accommodations-heading-container {
-
+    .cards-container-title {
+        font-size: 20px;
     }
 
     .most-popular-accommodations-cards {
@@ -738,7 +742,7 @@ footer {
     .cards-container {
         max-width: 100%;
         flex-direction: column;
-        padding: 0px 25px;
+        padding: 0px 20px;
     }
 
     .accommodations-cards{
@@ -747,33 +751,22 @@ footer {
 
     .accommodations-cards-image {
         max-width: 100%;
-        width: 100%;
+        width: 97%;
+        text-align: center;
     }
 
-    /* Footer */
-
-    .footer-container {
-        flex-direction: column;
-        max-width: 100%;
-    }
-
-    .footer-links-container>h3 {
-        font-size: 16px;
-        margin-bottom: 18px;
-    }
-
-    .footer-links-container>p {
-        margin: 10px 0px;
-        font-size: 15px;
-        width: 100%;
-    }
-
-    .footer-links-container {
-        margin-right: 10px;
-        margin-bottom: 30px;
+    .show-more {
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
 
     /* Activities container */
+
+    .activities-section {
+        margin-top: 0px;
+        padding: 0px 20px;
+    }
 
     .activities-container {
        grid-template-columns: 1fr;
@@ -869,7 +862,29 @@ footer {
         object-position: center;
     }
 
+    /* Footer */
 
+    .footer-container {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 20px 20px;
+    }
+
+    .footer-links-container>h3 {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .footer-links-container>p {
+        margin: 10px 0px;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .footer-links-container {
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
     
 }
 
