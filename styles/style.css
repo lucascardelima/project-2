@@ -73,7 +73,7 @@ p {
 /* Search field */
 
 .search-box {
-    margin-top: 10px;
+    margin-top: 20px;
     display: inline-flex;
     max-width: 700px;
     height: 47px;
@@ -512,48 +512,57 @@ footer {
 
 @media all and (max-width: 480px) {
     .nav-bar {
-        flex-wrap: wrap;
-        max-width: 380px; 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-width: 415px; 
         padding: 0px 0px;
         margin: 0px;
        
     }
 
     .reservia-logo {
-        order: 1;
         padding-top: 25px;
         padding-left: 25px;
+        grid-column: 1 /2;
+        grid-row: 1 / 2;
     }
 
     #accommodations-link {
-        order: 3;
-        flex-grow: 1;
-        padding-top: 25px;
-        padding-bottom: 13px;
-        margin-right: 0px;
-        border-bottom: 3px solid #F2F2F2;
-        text-align: center;
-        font-size: 15px;
-    }
-
-    #activities {
-        order: 4;
-        flex-grow: 2;
-        padding-top: 25px;
+        padding-top: 20px;
         padding-bottom: 13px;
         margin-right: 0px;
         margin-left: 0px;
         border-bottom: 3px solid #F2F2F2;
+        align-self: center;
         text-align: center;
         font-size: 15px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
     }
 
-    #activities:active {
-        border-bottom-color: #0065FC;
+    #activities {
+        padding-top: 20px;
+        padding-bottom: 13px;
+        margin-right: 0px;
+        margin-left: 0px;
+        border-bottom: 3px solid #F2F2F2;
+        align-self: center;
+        text-align: center;
+        font-size: 15px;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
     }
 
-    #accommodations-link:active {
+    #activities: {
         border-bottom-color: #0065FC;
+        color: #0065FC;
+    }
+
+    #accommodations-link:visited {
+        border-bottom-color: #0065FC;
+        color: #0065FC;
     }
 
     #accommodations-link, #activities, #sign-up:hover {
@@ -562,17 +571,23 @@ footer {
     }
 
     #sign-up {
-        order: 2;
         margin-left: auto;
         margin-right: 0px;
         padding-right: 30px;
         padding-top: 40px;
+        padding-bottom: 10px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        align-self: center;
         
     }
 
     header {
-        padding: 0px 10px 0px 17px;
-        max-width: 380px;
+        padding: 0px 0px 0px 17px;
+        width: 90%;
+        max-width: 100%;
+        margin: 40px 0px 0px 0px;
+        
     }
 
     header>h2 {
@@ -605,13 +620,13 @@ footer {
     }
 
     .search-box {
-        height: 47px;
-        max-width: 700px;
+        height: 50px;
+        width: 100%;
     }
     
     .location-icon {
         font-size: 9px;
-        padding: 14px 16px 14px 19px;
+        padding: 15px 16px 14px 19px;
         
     }
     
@@ -620,7 +635,7 @@ footer {
         border-bottom: 1px solid #F2F2F2;
         border-left: none;
         border-right: none;
-        max-width: 450px;
+        width: 100%;
         color: black;
         font-size: 19px;
         font-weight: lighter;
@@ -638,9 +653,10 @@ footer {
 
     /* Filters */
 
-    .filter-main-container {
+    .filters-main-container {
         flex-direction: row;
         flex-wrap: wrap;
+        margin-top: 30px;
     }
 
     .filters-head-text {
@@ -682,9 +698,12 @@ footer {
 
     .most-popular-accommodations-container {
         max-width: 100%;
+        width: 100%;
         order: 1;
         border-radius: 0px;
         margin-bottom: 10px;
+        margin-right: 0px;
+        padding-right: 0px;
     }
 
     #most-popular-cards-container-title {
@@ -694,6 +713,10 @@ footer {
     
     .accommodations-heading-container {
 
+    }
+
+    .most-popular-accommodations-cards {
+        width: 90%;
     }
 
 
@@ -724,7 +747,7 @@ footer {
 
     .accommodations-cards-image {
         max-width: 100%;
-        width: 97%;
+        width: 100%;
     }
 
     /* Footer */
@@ -748,6 +771,102 @@ footer {
     .footer-links-container {
         margin-right: 10px;
         margin-bottom: 30px;
+    }
+
+    /* Activities container */
+
+    .activities-container {
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+       max-height: max-content;
+       width: 100%;
+    }
+
+    .activities-cards-container-title {
+        font-size: 20px;
+    }
+
+    .activity-cards {
+        height: 180px;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #activity-one {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;   
+    }
+    
+    #activity-two {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    #activity-three {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    #activity-four {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    
+    #activity-five {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    
+    #activity-six {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+
+    /* Activity images */
+
+    .activity-img-one {
+        object-fit: cover;
+        width: 100%;
+        height: 130px;
+        object-position: 60% 40%;
+    }
+    
+    .activity-img-two {
+        object-fit: cover;
+        width: 100%;
+        height: 130px;
+        object-position: 10%; 
+    }
+    
+    .activity-img-three {
+        object-fit: cover;
+        width: 100%;
+        height: 130px;
+        object-position: 70% 20%;   
+    }
+    
+    .activity-img-four {
+        object-fit: cover;
+        width: 100%;
+        height: 130px;
+        object-position: 50% 100%;
+    }
+    
+    .activity-img-five {
+        object-fit: cover;
+        width: 100%;
+        height: 130px;
+        object-position: 60% 20%;
+    }
+    
+    .activity-img-six {
+        object-fit: cover;
+        width: 100%;
+        height: 130px;
+        object-position: center;
     }
 
 
