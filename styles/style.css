@@ -239,7 +239,6 @@ input {
     background-color: #F2F2F2;
     border-radius: 17px;
     max-width: 900px;
-    min-width: 360px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -263,7 +262,6 @@ input {
     background-color: white;
     margin: 15px 5px;
     max-width: 250px;
-    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.068), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
 }
 
@@ -728,7 +726,7 @@ footer {
 
     .accommodations-main-container {
         max-width: 100%;
-        min-width: 414px;
+        width: 100%;
         order: 2;
         background-color: white;
         margin-top: 10px;
@@ -744,7 +742,6 @@ footer {
 
     .cards-container {
         max-width: 100%;
-        
         flex-direction: column;
         padding: 0px 20px;
     }
