@@ -564,7 +564,17 @@ footer {
 
     #accommodations-link, #activities, #sign-up:hover {
         border-top: none;
-        color: none;
+        color: black;
+    }
+
+    #accommodations-link:active {
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+    }
+
+    #activities:active {
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
     }
 
     #sign-up {
