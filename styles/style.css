@@ -80,7 +80,7 @@ p {
 }
 
 .location-icon {
-    font-size: 8px;
+    font-size: 9px;
     width: 17px;
     padding: 15px 16px 14px 19px;
     background-color: #F2F2F2;
@@ -96,7 +96,7 @@ input {
     max-width: 500px;
     color: black;
     font-size: 19px;
-    font-weight: 500;
+    font-weight: 400;
     padding-left: 10px;
     
 }
@@ -105,7 +105,7 @@ input {
     color: black;
     font-size: 20px;
     padding-top: 5px;
-    font-weight: 600;
+    font-weight: 700;
     padding-left: -10px;
 }
 
@@ -117,7 +117,7 @@ input {
     border: none;
     border-top-right-radius: 17px;
     border-bottom-right-radius: 17px;
-    font-size: 18px;
+    font-size: 19px;
     cursor: pointer;
 }
 
@@ -182,8 +182,9 @@ input {
     
 }
 
-.filters-text:hover {
-    color: #0065FC;
+.filters-buttons:hover {
+    background-color: #0065FC;
+    color: #DEEBFF;
 }
 
 .filters-icon-container {
@@ -224,8 +225,7 @@ input {
 /* Normal and most popular accommodations cards section */
 
 .accommodations-section {
-    width: 1300px;
-    max-width: 90%;
+    max-width: 1300px;
     padding: 0px 30px;
     margin: auto;
     display: flex;
@@ -280,7 +280,6 @@ a.accommodations-cards, a.most-popular-accommodations-cards, a.activity-cards {
 }
 
 .accommodations-details-container {
-    
     margin-left: 15px;
     margin-bottom: 10px;
     font-size: 14px;
@@ -335,6 +334,11 @@ span {
     font-size: 22px;
     font-weight: bold;
     padding: 40px 0px 10px 35px;
+}
+
+.most-popular-cards-container {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -503,24 +507,31 @@ footer {
     max-width: 1300px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: auto;
     background-color: #F2F2F2;
     
 }
 
-#assistance-links {
-    margin-right: 200px;
+.footer-links-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    padding-right: 20px;
+}
+
+.footer-links-container>a {
+    margin: 5px 0px;
 }
 
 
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 520px) {
     nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        max-width: 415px; 
+        max-width: 100%; 
         padding: 0px 0px;
         margin: 0px;
        
@@ -592,7 +603,7 @@ footer {
 
     header {
         padding: 0px 0px 0px 17px;
-        width: 90%;
+        width: 93%;
         max-width: 100%;
         margin: 40px 0px 0px 0px;
         
@@ -901,7 +912,73 @@ footer {
 
 /* Setting for Ipad */
 
-@media all and (min-device-width: 481px) and (max-device-width: 1024px) {
+@media all and (min-device-width: 521px) and (max-device-width: 1250px) {
+    .accommodations-section {
+        flex-direction: column;
+    }
 
+    .accommodations-main-container {
+        order: 2;
+        margin: auto;
+    }
+
+
+    .most-popular-accommodations-container {
+        order: 1;
+        max-width: 900px;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .most-popular-cards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0px 35px;
+        margin-bottom: 15px;
+        
+        
+    }
+
+    .most-popular-accommodations-cards {
+        display: flex;
+        flex-direction: column;
+        border-radius: 17px;
+        background-color: white;
+        margin: 15px 5px;
+        max-width: 240px;
+        min-width: 100px;
+        height: auto;
+        width: 100%;
+    }
+
+    .most-popular-accommodations-details-container {
+        margin-left: 15px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    #title-too-long {
+        font-size: 0.9em;
+    }
+
+    .most-popular-accommodations-details-container div:nth-child(1) {
+        margin: 5px 0px;
+    }
+    .most-popular-accommodations-details-container div:nth-child(2) {
+        margin: 5px 0px;
+    }
+
+    .most-popular-accommodations-image {
+        max-width: 96%;
+        
+        padding: 5px 5px 0px 5px;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+        border-bottom-left-radius: 0px;
+        object-fit: cover;
+    }
 }
 
