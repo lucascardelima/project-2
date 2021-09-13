@@ -37,6 +37,7 @@ nav {
     margin: 0px 15px 0px 20px;
     color: #0065FC;
     font-weight: bold;
+    border-top:#0065FC 2px solid;
 }
 
 .bar-buttons {
@@ -571,21 +572,20 @@ footer {
         grid-row: 2 / 3;
     }
 
-    
+    #sign-up {
+        border-top: none;
+    }
 
-    #accommodations-link, #activities, #sign-up:hover {
+    #activities:hover{
         border-top: none;
         color: black;
+        border-bottom: 3px solid #0065FC;
     }
 
-    #accommodations-link:active {
+    #accommodations-link:hover{
+        border-top: none;
+        color: black;
         border-bottom: 3px solid #0065FC;
-        color: #0065FC;
-    }
-
-    #activities:active {
-        border-bottom: 3px solid #0065FC;
-        color: #0065FC;
     }
 
     #sign-up {
