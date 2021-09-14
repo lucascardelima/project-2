@@ -926,7 +926,7 @@ footer {
 
 /* Setting for Ipad */
 
-@media all and (min-device-width: 521px) and (max-device-width: 1250px) {
+@media all and (min-width: 521px) and (max-width: 1250px) {
     .accommodations-section {
         flex-direction: column;
     }
@@ -995,7 +995,7 @@ footer {
     }
 }
 
-@media all and (min-device-width: 521px) and (max-device-width: 1064px) {
+@media all and (min-width: 521px) and (max-width: 1064px) {
     .activities-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
