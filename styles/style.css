@@ -973,12 +973,101 @@ footer {
 
     .most-popular-accommodations-image {
         max-width: 96%;
-        
         padding: 5px 5px 0px 5px;
         border-top-left-radius: 17px;
         border-top-right-radius: 17px;
         border-bottom-left-radius: 0px;
         object-fit: cover;
     }
+}
+
+@media all and (min-device-width: 521px) and (max-device-width: 1064px) {
+    .activities-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        max-height: max-content;
+        width: 100%;
+    }
+
+    .activity-cards {
+        height: 180px;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #activity-one {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;   
+    }
+    
+    #activity-two {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    #activity-three {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    #activity-four {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    #activity-five {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    #activity-six {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .activity-img-one {
+        object-fit: cover;
+        width: 100%;
+        height: 130px;
+        object-position: 60% 40%;
+    }
+    
+    .activity-img-two {
+        object-fit: cover;
+        width: 100%;
+        height: 130px;
+        object-position: 10%; 
+    }
+    
+    .activity-img-three {
+        object-fit: cover;
+        width: 100%;
+        height: 130px;
+        object-position: 70% 20%;   
+    }
+    
+    .activity-img-four {
+        object-fit: cover;
+        width: 100%;
+        height: 130px;
+        object-position: 50% 100%;
+    }
+    
+    .activity-img-five {
+        object-fit: cover;
+        width: 100%;
+        height: 130px;
+        object-position: 60% 20%;
+    }
+    
+    .activity-img-six {
+        object-fit: cover;
+        width: 100%;
+        height: 130px;
+        object-position: center;
+    }
+
 }
 
