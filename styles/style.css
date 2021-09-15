@@ -257,6 +257,7 @@ input {
     font-size: 22px;
     font-weight: bold;
     padding: 40px 0px 10px 35px;
+    margin: 0px 0px;
 }
 
 .cards-container {
@@ -336,7 +337,8 @@ span {
 .accommodations-heading-container {
     display: flex;
     justify-content: space-between;
-    margin-right: 35px;
+    margin: 0px 35px 0px 0px;
+    
 }
 
 .most-popular-icon {
@@ -409,6 +411,7 @@ span {
     font-size: 22px;
     font-weight: bold;
     padding: 20px 0px 20px 0px;
+    margin: 0px 0px;
 }
 
 .activity-img-one {
