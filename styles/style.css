@@ -334,6 +334,10 @@ span {
     margin-bottom: 20px;
 }
 
+.most-popular-accommodations-container>h3 {
+    display: none;
+}
+
 .accommodations-heading-container {
     display: flex;
     justify-content: space-between;
