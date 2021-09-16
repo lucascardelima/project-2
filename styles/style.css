@@ -238,8 +238,11 @@ input {
     padding: 0px 30px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
+}
+
+.accommodations-section>h3 {
+    display: none;
 }
 
 /* Normal Accommodations sections and cards */
@@ -398,6 +401,10 @@ span {
     max-width: 1300px;
     padding: 0px 30px;
     margin: 30px auto;
+}
+
+.activities.section>h3 {
+    display: none;
 }
 
 
