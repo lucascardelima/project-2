@@ -108,7 +108,6 @@ input {
     font-size: 20px;
     padding-top: 5px;
     font-weight: 700;
-    padding-left: -10px;
 }
 
 .city-search-button {
@@ -472,7 +471,6 @@ span {
 }
 
 .activities-subtitle {
-    max-width: auto;
     font-size: 100%;
     font-weight: bold;
     text-align: start;
@@ -696,7 +694,6 @@ footer {
         font-size: 18px;
         padding-top: 5px;
         font-weight: bold;
-        padding-left: -10px;
     }
 
     /* Filters */
